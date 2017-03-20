@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+     <tr th:each="usuario : ${usuarios}">
+        <td th:text="${usuario.id}">1</td>
+        <td><a href="#" th:text="${usuario.nome}">Title ...</a></td>
+        <td th:text="${usuario.regra}">Text ...</td>
+    </tr>
+    
+</body>
+</html>
